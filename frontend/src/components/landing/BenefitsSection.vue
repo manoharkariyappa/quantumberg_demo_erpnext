@@ -39,7 +39,7 @@ const benefits = [
   <section class="scroll-mt-24 bg-edu-bg py-10 lg:py-12">
     <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[1.6fr_1fr] lg:gap-12 lg:px-8">
       <div class="relative order-2 lg:order-1">
-        <div class="rounded-[26px] bg-brand-gradient p-1.5 shadow-panel">
+        <div class="mx-auto w-[90%] rounded-[26px] bg-brand-gradient p-1.5 shadow-panel">
           <DashboardPreview src="proj-admin-dashboard.png" />
         </div>
       </div>

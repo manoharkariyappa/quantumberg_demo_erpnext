@@ -67,7 +67,7 @@ const indicators = [
       </div>
 
       <div class="relative">
-        <div class="rounded-[26px] bg-brand-gradient p-1.5 shadow-panel" aria-hidden="false">
+        <div class="mx-auto w-[90%] rounded-[26px] bg-brand-gradient p-1.5 shadow-panel" aria-hidden="false">
           <DashboardPreview />
         </div>
       </div>
