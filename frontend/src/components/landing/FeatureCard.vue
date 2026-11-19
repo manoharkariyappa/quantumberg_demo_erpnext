@@ -33,13 +33,13 @@ const accents = {
 
 <template>
   <article
-    class="group h-full rounded-2xl bg-brand-gradient p-[2px] shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover focus-within:shadow-card-hover"
+    class="group h-full rounded-xl bg-brand-gradient p-px shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover focus-within:shadow-card-hover"
   >
-    <div class="flex h-full flex-col rounded-[14px] bg-white p-6">
+    <div class="flex h-full flex-col rounded-[11px] bg-white p-4">
       <div class="flex items-start justify-between gap-3">
         <span
           :class="[
-            'inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors duration-300 group-hover:text-white',
+            'inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 group-hover:text-white',
             accents[accent] || accents.purple,
           ]"
         >
@@ -51,7 +51,7 @@ const accents = {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="h-6 w-6"
+              class="h-5 w-5"
               aria-hidden="true"
             >
               <circle cx="12" cy="12" r="9" />
@@ -65,10 +65,10 @@ const accents = {
           {{ String(index + 1).padStart(2, '0') }}
         </span>
       </div>
-      <h3 class="mt-5 text-[17px] font-bold text-edu-deep">
+      <h3 class="mt-3 text-[15px] font-bold text-edu-deep">
         {{ title }}
       </h3>
-      <p v-if="description" class="mt-2 text-body-md text-edu-muted">
+      <p v-if="description" class="mt-1 text-body-sm text-edu-muted">
         {{ description }}
       </p>
     </div>

@@ -17,9 +17,9 @@ defineProps({
 
 <template>
   <article
-    class="flex h-full flex-col rounded-2xl border border-edu-border bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
+    class="flex h-full flex-col rounded-2xl border border-edu-border bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
   >
-    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gradient text-white shadow-cta">
+    <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-gradient text-white shadow-cta">
       <slot name="icon">
         <svg
           viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ defineProps({
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-6 w-6"
+          class="h-5 w-5"
           aria-hidden="true"
         >
           <circle cx="12" cy="8" r="4" />
@@ -37,18 +37,18 @@ defineProps({
       </slot>
     </span>
 
-    <h3 class="mt-5 text-[18px] font-bold text-edu-deep">
+    <h3 class="mt-3 text-[16px] font-bold text-edu-deep">
       {{ title }}
     </h3>
-    <p class="mt-2 text-body-md text-edu-muted">
+    <p class="mt-1 text-body-sm text-edu-muted">
       {{ description }}
     </p>
 
-    <ul class="mt-5 space-y-2.5">
+    <ul class="mt-4 space-y-1.5">
       <li
         v-for="bullet in bullets"
         :key="bullet"
-        class="flex items-start gap-2.5 text-body-md text-edu-ink"
+        class="flex items-start gap-2 text-body-sm text-edu-ink"
       >
         <svg
           viewBox="0 0 24 24"

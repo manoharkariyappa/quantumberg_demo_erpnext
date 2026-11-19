@@ -23,11 +23,11 @@ function onNavClick(event, target) {
 
 <template>
   <footer class="bg-edu-deep text-white">
-    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <div class="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
+    <div class="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <BrandLogo variant="dark" />
-          <p class="mt-4 max-w-md text-body-md text-white/70">
+          <p class="mt-3 max-w-md text-body-md text-white/70">
             An ERPNext demo that connects manufacturing, projects, inventory
             and accounting in one streamlined workspace.
           </p>
@@ -37,7 +37,7 @@ function onNavClick(event, target) {
           <h3 class="text-body-sm font-bold uppercase tracking-[0.16em] text-white/50">
             Platform
           </h3>
-          <ul class="mt-4 space-y-2.5">
+          <ul class="mt-3 space-y-1.5">
             <li v-for="link in platformLinks" :key="link.target">
               <a :href="`#${link.target}`"
                 class="text-body-md text-white/75 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-edu-deep rounded"
@@ -52,7 +52,7 @@ function onNavClick(event, target) {
           <h3 class="text-body-sm font-bold uppercase tracking-[0.16em] text-white/50">
             Resources
           </h3>
-          <ul class="mt-4 space-y-2.5">
+          <ul class="mt-3 space-y-1.5">
             <li>
               <a :href="loginUrl"
                 class="text-body-md text-white/75 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-edu-deep rounded">
@@ -63,7 +63,7 @@ function onNavClick(event, target) {
         </nav>
       </div>
 
-      <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
+      <div class="mt-7 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-4 sm:flex-row">
         <p class="text-body-sm text-white/55">
           &copy; {{ year }} Quantumberg Tech Pvt Ltd &middot; Demo ERPNext.
           All rights reserved.

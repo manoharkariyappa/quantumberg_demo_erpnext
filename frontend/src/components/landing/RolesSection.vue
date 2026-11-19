@@ -42,22 +42,22 @@ const roles = [
 </script>
 
 <template>
-  <section id="roles" class="scroll-mt-24 bg-white py-10 lg:py-12">
+  <section id="roles" class="scroll-mt-24 bg-white py-6 lg:py-8">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
         <p class="text-body-sm font-bold uppercase tracking-[0.18em] text-edu-purple">
           Built for every role
         </p>
-        <h2 class="mt-3 text-display-sm font-extrabold text-edu-deep sm:text-display-md">
+        <h2 class="mt-2 text-display-sm font-extrabold text-edu-deep sm:text-display-md">
           One platform, every team
         </h2>
-        <p class="mt-4 text-body-lg text-edu-muted">
+        <p class="mt-3 text-body-lg text-edu-muted">
           Production, project and finance teams each get a workspace shaped
           around their work &mdash; while the underlying records stay connected.
         </p>
       </div>
 
-      <div class="mt-8 grid gap-6 md:grid-cols-3">
+      <div class="mt-5 grid gap-4 md:grid-cols-3">
         <RoleCard
           v-for="role in roles"
           :key="role.key"
@@ -74,7 +74,7 @@ const roles = [
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="h-6 w-6"
+              class="h-5 w-5"
               aria-hidden="true"
             >
               <path d="M3 21V9l6 4V9l6 4V5l6 4v12H3z" />
@@ -89,7 +89,7 @@ const roles = [
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="h-6 w-6"
+              class="h-5 w-5"
               aria-hidden="true"
             >
               <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -104,7 +104,7 @@ const roles = [
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="h-6 w-6"
+              class="h-5 w-5"
               aria-hidden="true"
             >
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
@@ -120,7 +120,7 @@ const roles = [
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="h-6 w-6"
+              class="h-5 w-5"
               aria-hidden="true"
             >
               <rect x="3" y="3" width="7" height="9" rx="1.5" />
